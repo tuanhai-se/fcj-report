@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 {{% notice warning %}}
@@ -13,25 +12,24 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Full Name:** Nguyen Tuan Hai
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Phone Number:** 0906618370
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **Email:** tuanhainguyen.103@gmail.com
+
+&emsp; **University:** FPT University
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+&emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Internship Duration:** From 18/05/2026 to 18/08/2026
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
-
-![Your profile picture](/images/avatar.png)
+![Your profile picture](images/ava.jpg)
 
 ### Report Content
 
