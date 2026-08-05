@@ -17,9 +17,9 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
 | 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅   | ☐    | ☐       |
 | 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅   | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅   | ☐    | ☐       |
+| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ☐    | ✅   | ☐       |
 | 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅   | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅      |
+| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ✅   | ☐    | ☐       |
 | 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅   | ☐       |
 | 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅   | ☐       |
 | 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅   | ☐    | ☐       |
@@ -30,6 +30,6 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 
 ### Needs Improvement
 
-- Strengthen discipline and strictly comply with the rules and regulations of the company or any organization
-- Improve problem-solving thinking
-- Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+- Develop a strong sense of discipline and adhere to organizational policies and workplace regulations
+- Strengthen analytical and problem-solving skills
+- Enhance communication abilities in both everyday interactions and professional environments, including effective situation handling.
