@@ -16,24 +16,24 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [Amazon VPC, Hybrid DNS, and Transit Gateway](1.2-week2/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 3:** [AWS compute, storage, backup, migration, and initial architectural research](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 4:** [Exploring AWS Storage Solutions and Disaster Recovery](1.4-week4/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 5:** [Enhancing Security and Optimizing Costs on AWS](1.5-week5/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 6:** [Hands-on Exploration of AWS Database and Serverless Services](1.6-week6/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [Serverless Architecture, API Integration, and Authentication](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 8:** [AWS Architecture Deep Dive & API Gateway Success](1.8-week8/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 9:** [API Gateway Advanced Concepts & Logging](1.9-week9/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 10:** [Serverless CRUD, Excel Upload & API Gateway Models](1.10-week10/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 11:** [AWS DevOps, API Flexibility & Traffic Routing](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [CloudFront Pricing, Docker Workflow & Auto Scoring with Lambda](1.12-week12/)

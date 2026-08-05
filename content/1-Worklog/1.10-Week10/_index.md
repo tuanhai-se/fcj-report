@@ -5,53 +5,37 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
+
+{{% notice warning %}}
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
 {{% /notice %}}
 
-
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Strengthen understanding of API Gateway fundamentals and integrations
+- Build and deploy Lambda functions for uploading Excel data into DynamoDB
+- Implement full CRUD operations using Lambda and DynamoDB
+- Configure API Gateway to test Lambda functions using Postman
+- Learn and apply request body validation using API Gateway Models
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task                                                               | Start Date | Completion Date | Reference Material                                 |
+| --- | ------------------------------------------------------------------ | ---------- | --------------- | -------------------------------------------------- |
+| 2   | - Learn about API gateway                                          | 23/07/2026 | 23/07/2026      | <https://youtu.be/YjOjDtprDSo?si=NYb88SlpO2VMhLYx> |
+| 3   | - Create Lambda function to upload excel data to store in dynamoDB | 24/07/2026 | 24/07/2026      |                                                    |
+| 4   | - Create Lambda function to CRUD data                              | 25/07/2026 | 25/07/2026      |                                                    |
+| 5   | - Config API gateway to test Lambda function in Postman            | 26/07/2026 | 26/07/2026      | <https://000079.awsstudygroup.com/>                |
+| 6   | - Body Validation using API Gateway Models                         | 27/07/2026 | 27/07/2026      | <https://youtu.be/tmhZbcqlEiQ?si=MBkltclc2rWTlHKr> |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Completed learning of API Gateway fundamentals and architecture flow
 
-* Successfully created and configured an AWS Free Tier account.
+- Built Lambda function to read Excel files and successfully store parsed data in DynamoDB
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- BDeveloped full CRUD functionality using Lambda + DynamoDB
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Configured API Gateway and successfully tested endpoints using Postman
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Implemented body schema validation using API Gateway Models to ensure structured and accurate API requests
