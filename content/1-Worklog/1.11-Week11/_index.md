@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 ### Week 11 Objectives:
 
 - Strengthen understanding of DevOps practices on AWS<br>

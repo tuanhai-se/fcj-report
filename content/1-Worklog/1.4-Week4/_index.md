@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 ### Week 4 Objectives:
 
 - Learn to use both the AWS Management Console and the AWS CLI effectively.
