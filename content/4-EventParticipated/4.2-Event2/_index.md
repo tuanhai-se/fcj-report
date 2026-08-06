@@ -18,8 +18,6 @@ pre: " <b> 4.2. </b> "
 
 **Proof of participation:**
 
-<img src="/fcj-report/images/4-EventParticipated/Event2/event2-1.jpg">
-
 <img src="/fcj-report/images/4-EventParticipated/Event2/event2-2.jpg">
 
 <img src="/fcj-report/images/4-EventParticipated/Event2/event2-3.jpg">
