@@ -7,8 +7,6 @@ pre: "<b>5.4.3.</b>"
 description: "Cấu hình hạ tầng và kết quả Terraform validation."
 ---
 
-# Hạ tầng Terraform
-
 ## Kết quả
 
 - Job **Terraform validation** trong [run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529) thành công.

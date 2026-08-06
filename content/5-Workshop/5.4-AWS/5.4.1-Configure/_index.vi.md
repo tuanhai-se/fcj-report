@@ -7,8 +7,6 @@ pre: "<b>5.4.1.</b>"
 description: "Các giá trị cấu hình sử dụng cho môi trường EduFlow trên AWS."
 ---
 
-# Cấu hình triển khai
-
 | Thuộc tính                          | Giá trị                                                      |
 | ----------------------------------- | ------------------------------------------------------------ |
 | AWS Region                          | `ap-southeast-1`                                             |

@@ -7,8 +7,6 @@ pre: "<b>5.5.</b>"
 description: "EduFlow HTTP, browser, load, and CI/CD results."
 ---
 
-# Test results
-
 ## HTTP checks on 5 August 2026
 
 | Endpoint                                                                                             | Result                                 | One measured request   |

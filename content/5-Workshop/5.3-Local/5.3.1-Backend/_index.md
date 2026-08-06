@@ -7,8 +7,6 @@ pre: "<b>5.3.1.</b>"
 description: "Backend test result from GitHub Actions run #76."
 ---
 
-# Backend test result
-
 In [GitHub Actions run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529), the **Backend tests** job reported `success`.
 
 GitHub recorded these steps as successful:

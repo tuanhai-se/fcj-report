@@ -7,8 +7,6 @@ pre: "<b>3.2.</b>"
 description: "How EduFlow turns an AWS architecture into reproducible infrastructure modules."
 ---
 
-# From architecture diagram to ECS Fargate with Terraform
-
 EduFlow infrastructure does not aim to use the most AWS services. It maps each operational need to one clear component.
 
 ## Module boundaries

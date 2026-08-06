@@ -7,8 +7,6 @@ pre: "<b>5.4.1.</b>"
 description: "Configuration values used for the EduFlow environment on AWS."
 ---
 
-# Deployment configuration
-
 | Property                      | Value                                                        |
 | ----------------------------- | ------------------------------------------------------------ |
 | AWS Region                    | `ap-southeast-1`                                             |

@@ -7,8 +7,6 @@ pre: "<b>5.5.</b>"
 description: "Kết quả HTTP, trình duyệt, tải và CI/CD của EduFlow."
 ---
 
-# Kết quả kiểm thử
-
 ## Kiểm tra HTTP ngày 05/08/2026
 
 | Endpoint                                                                                           | Kết quả                                | Thời gian một lần đo |

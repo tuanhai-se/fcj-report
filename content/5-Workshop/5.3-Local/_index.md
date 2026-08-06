@@ -7,8 +7,6 @@ pre: "<b>5.3.</b>"
 description: "Backend, frontend, Terraform, and deployment results from GitHub Actions."
 ---
 
-# Test and deployment results
-
 [Test and Deploy to Amazon ECS Fargate #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529) automated testing, infrastructure validation, container image builds, and application deployment.
 
 | Job                     | Result    | Recorded time         |

@@ -7,8 +7,6 @@ pre: "<b>3.2.</b>"
 description: "Cách EduFlow chuyển kiến trúc AWS thành các module hạ tầng có thể tái tạo."
 ---
 
-# Từ sơ đồ đến ECS Fargate bằng Terraform
-
 Mục tiêu hạ tầng của EduFlow không phải dùng nhiều dịch vụ nhất, mà là ánh xạ rõ mỗi nhu cầu vận hành vào một thành phần AWS.
 
 ## Ranh giới module

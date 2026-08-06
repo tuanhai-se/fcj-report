@@ -7,8 +7,6 @@ pre: "<b>5.4.</b>"
 description: "URL ứng dụng và kết quả triển khai trên AWS."
 ---
 
-# Triển khai EduFlow trên AWS
-
 Ứng dụng được kiểm tra qua DNS mặc định của Application Load Balancer tại `ap-southeast-1`:
 
 - [Trang chủ EduFlow](http://eduflow-dev-alb-560717424.ap-southeast-1.elb.amazonaws.com/)

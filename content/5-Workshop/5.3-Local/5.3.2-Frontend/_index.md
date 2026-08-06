@@ -7,8 +7,6 @@ pre: "<b>5.3.2.</b>"
 description: "Frontend tests and upload-permission results from GitHub Actions."
 ---
 
-# Frontend test result
-
 In [GitHub Actions run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529), the **Frontend tests** job reported `success`.
 
 GitHub recorded these steps as successful:

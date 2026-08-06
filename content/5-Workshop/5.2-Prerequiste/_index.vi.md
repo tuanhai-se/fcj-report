@@ -7,8 +7,6 @@ pre: "<b>5.2.</b>"
 description: "Mã nguồn, CI/CD và cấu hình hạ tầng sử dụng trong workshop."
 ---
 
-# Nguồn tài liệu triển khai
-
 ## Tài liệu và công cụ
 
 - Mã nguồn và lịch sử commit của [EduFlowPlatform](https://github.com/L1nkinPark/EduFlowPlatform).

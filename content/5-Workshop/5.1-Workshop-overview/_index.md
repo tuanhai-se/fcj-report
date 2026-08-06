@@ -7,8 +7,6 @@ pre: "<b>5.1.</b>"
 description: "EduFlow architecture on AWS and deployment results."
 ---
 
-# Deployment architecture
-
 ## System architecture
 
 The EduFlow infrastructure is defined with Terraform and includes a VPC, public/private data subnets, security groups, ALB, ECS Fargate, ECR, RDS MySQL, S3, Secrets Manager, and CloudWatch Logs in `ap-southeast-1`.

@@ -7,8 +7,6 @@ pre: "<b>5.4.3.</b>"
 description: "Infrastructure configuration and Terraform validation results."
 ---
 
-# Terraform infrastructure
-
 ## Results
 
 - The **Terraform validation** job in [run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529) succeeded.

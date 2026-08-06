@@ -7,8 +7,6 @@ pre: "<b>5.4.</b>"
 description: "Application URLs and AWS deployment results."
 ---
 
-# EduFlow deployment on AWS
-
 The application was checked through the default Application Load Balancer DNS in `ap-southeast-1`:
 
 - [EduFlow homepage](http://eduflow-dev-alb-560717424.ap-southeast-1.elb.amazonaws.com/)

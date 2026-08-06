@@ -7,8 +7,6 @@ pre: "<b>5.3.2.</b>"
 description: "Kết quả frontend test và kiểm tra quyền upload từ GitHub Actions."
 ---
 
-# Kết quả kiểm thử frontend
-
 Trong [GitHub Actions run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529), job **Frontend tests** có kết quả `success`.
 
 Các bước được GitHub ghi nhận thành công:

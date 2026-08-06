@@ -7,8 +7,6 @@ pre: "<b>5.1.</b>"
 description: "Kiến trúc EduFlow trên AWS và kết quả triển khai."
 ---
 
-# Kiến trúc triển khai
-
 ## Kiến trúc hệ thống
 
 Hạ tầng EduFlow được định nghĩa bằng Terraform, gồm VPC, public/private data subnet, security group, ALB, ECS Fargate, ECR, RDS MySQL, S3, Secrets Manager và CloudWatch Logs tại `ap-southeast-1`.

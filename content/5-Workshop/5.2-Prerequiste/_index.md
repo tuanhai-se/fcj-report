@@ -7,8 +7,6 @@ pre: "<b>5.2.</b>"
 description: "Source code, CI/CD, and infrastructure configuration used in the workshop."
 ---
 
-# Deployment resources
-
 ## Documentation and tools
 
 - The [EduFlowPlatform](https://github.com/L1nkinPark/EduFlowPlatform) source and commit history.

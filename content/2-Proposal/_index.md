@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>2.</b>"
 ---
 
-# EduFlow online learning platform proposal
+# EduFlow online learning platform
 
 ## 1. Executive summary
 

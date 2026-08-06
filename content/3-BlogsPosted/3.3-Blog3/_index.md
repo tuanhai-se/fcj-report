@@ -7,8 +7,6 @@ pre: "<b>3.3.</b>"
 description: "Amounts, encoding, callback URLs, and trust boundaries in payments."
 ---
 
-# Easy-to-miss details in VNPay integration
-
 A payment URL can look valid and still be rejected when an amount or signature string differs by one character. EduFlow standardized four areas.
 
 ## 1. Amount units

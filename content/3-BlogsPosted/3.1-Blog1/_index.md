@@ -7,8 +7,6 @@ pre: "<b>3.1.</b>"
 description: "Lessons about API contracts, shared JWT configuration, and service-boundary failures."
 ---
 
-# Splitting Spring Boot frontend and backend in EduFlow
-
 EduFlow uses two Java applications: a Thymeleaf frontend on port 8080 and a REST backend on port 8888. This separation gives each layer an independent lifecycle, but introduces network, authentication, and error-handling boundaries.
 
 ## Why separate them?

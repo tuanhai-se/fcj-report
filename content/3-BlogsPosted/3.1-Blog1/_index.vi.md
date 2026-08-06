@@ -7,8 +7,6 @@ pre: "<b>3.1.</b>"
 description: "Bài học về hợp đồng API, JWT dùng chung và lỗi giữa hai dịch vụ."
 ---
 
-# Tách Spring Boot frontend và backend trong EduFlow
-
 EduFlow dùng hai ứng dụng Java: frontend render Thymeleaf trên cổng 8080 và backend REST API trên cổng 8888. Cách tách này giúp hai lớp có vòng đời độc lập, nhưng cũng tạo thêm ranh giới mạng, xác thực và xử lý lỗi.
 
 ## Vì sao tách?

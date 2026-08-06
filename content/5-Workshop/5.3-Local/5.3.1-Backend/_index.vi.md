@@ -7,8 +7,6 @@ pre: "<b>5.3.1.</b>"
 description: "Kết quả backend test từ GitHub Actions run #76."
 ---
 
-# Kết quả kiểm thử backend
-
 Trong [GitHub Actions run #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529), job **Backend tests** có kết quả `success`.
 
 Các bước được GitHub ghi nhận thành công:

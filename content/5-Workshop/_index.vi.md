@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>5.</b>"
 ---
 
-# Workshop triển khai EduFlow trên AWS
-
 Phần này trình bày quy trình triển khai EduFlow lên AWS, kết quả CI/CD, kiểm thử giao diện và kiểm thử tải thực hiện ngày 05/08/2026.
 
 ## Kết quả triển khai ngày 05/08/2026

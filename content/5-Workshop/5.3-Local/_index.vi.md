@@ -7,8 +7,6 @@ pre: "<b>5.3.</b>"
 description: "Kết quả backend, frontend, Terraform và triển khai từ GitHub Actions."
 ---
 
-# Kết quả kiểm thử và triển khai
-
 [Test and Deploy to Amazon ECS Fargate #76](https://github.com/L1nkinPark/EduFlowPlatform/actions/runs/30985947529) tự động thực hiện kiểm thử, validation hạ tầng, build container image và triển khai ứng dụng.
 
 | Job                    | Kết quả   | Thời gian ghi nhận    |

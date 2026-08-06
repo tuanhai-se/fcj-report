@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>5.</b>"
 ---
 
-# EduFlow deployment workshop on AWS
-
 This section presents the EduFlow deployment process on AWS, CI/CD results, browser testing, and load testing performed on 5 August 2026.
 
 ## Deployment results on 5 August 2026

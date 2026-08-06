@@ -7,8 +7,6 @@ pre: "<b>3.3.</b>"
 description: "Số tiền, encoding, callback URL và ranh giới tin cậy trong thanh toán."
 ---
 
-# Những chi tiết dễ sai khi tích hợp VNPay
-
 Một payment URL có thể nhìn hợp lệ nhưng vẫn bị VNPay từ chối nếu số tiền hoặc chuỗi ký khác chỉ một ký tự. EduFlow đã phải chuẩn hóa bốn điểm sau.
 
 ## 1. Đơn vị tiền
