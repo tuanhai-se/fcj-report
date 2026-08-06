@@ -5,55 +5,42 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Thành thạo việc sử dụng cả AWS Management Console và AWS CLI.
+- Tìm hiểu các dịch vụ lưu trữ của AWS như Amazon S3, AWS Storage Gateway, AWS Snow Family, AWS Backup và Amazon FSx.
+- Thực hành VM Import/Export bằng cách nhập máy ảo lên AWS và xuất EC2 Instance từ AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                     |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------- |
+| 2   | - Tìm hiểu các dịch vụ lưu trữ trên AWS <br>&emsp; + Amazon S3 <br>&emsp; + AWS Storage Gateway <br>&emsp; + AWS Snow Family <br> - Tìm hiểu giải pháp Disaster Recovery trên AWS | 11/06/2026   | 11/06/2026      | <https://youtu.be/hsCfP0IxoaM?si=IChJwQVIszhhCfZC> |
+| 3   | - Thực hành VM Import/Export <br>&emsp; + Import máy ảo lên AWS <br>&emsp; + Export EC2 Instance từ AWS                                                                           | 12/06/2026   | 12/06/2026      | <https://000014.awsstudygroup.com/>                |
+| 4   | - Viết Proposal cho dự án nhóm                                                                                                                                                    | 13/06/2026   | 13/06/2026      |                                                    |
+| 5   | - Tham gia sự kiện AWS GenAI Builder Club và ghi chú các nội dung quan trọng                                                                                                      | 14/06/2026   | 14/06/2026      |                                                    |
+| 6   | - Tìm hiểu Amazon FSx for Windows File Server <br> - **Thực hành:** <br>&emsp; + Tạo File Shares mới <br>&emsp; + Quản lý User Sessions và Open Files                             | 15/06/2026   | 15/06/2026      | <https://000025.awsstudygroup.com/vi/>             |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Tạo và cấu hình thành công tài khoản AWS Free Tier phục vụ cho quá trình thực hành.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Thành thạo việc sử dụng AWS Management Console và biết cách tìm kiếm, truy cập các dịch vụ quan trọng.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Cài đặt và cấu hình AWS CLI, bao gồm:
+  - Access Key
+  - Secret Key
+  - Default Region
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+  - Kiểm tra thông tin tài khoản và cấu hình
+  - Lấy danh sách các AWS Region
+  - Xem và quản lý Amazon EC2 Instances và Key Pairs
+  - Kiểm tra thông tin các dịch vụ đang hoạt động
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Thực hành thành công VM Import/Export giữa máy ảo cục bộ và AWS.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Tham gia sự kiện AWS GenAI Builder Club và tổng hợp những nội dung, ý tưởng nổi bật được chia sẻ.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Nâng cao khả năng quản lý tài nguyên AWS thông qua cả AWS Management Console và AWS CLI một cách song song.

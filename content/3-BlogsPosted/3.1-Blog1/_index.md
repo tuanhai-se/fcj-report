@@ -1,31 +1,36 @@
 ---
-title: "Blog 1"
-date: 2024-01-01
+title: "Splitting Spring Boot frontend and backend in EduFlow"
+date: 2026-08-05
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: "<b>3.1.</b>"
+description: "Lessons about API contracts, shared JWT configuration, and service-boundary failures."
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# Splitting Spring Boot frontend and backend in EduFlow
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+EduFlow uses two Java applications: a Thymeleaf frontend on port 8080 and a REST backend on port 8888. This separation gives each layer an independent lifecycle, but introduces network, authentication, and error-handling boundaries.
 
-Key points to know:
+## Why separate them?
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+- The frontend owns HTML, forms, sessions, i18n, and role-specific experience.
+- The backend owns business rules, JPA data, authorization, and payment/email integrations.
+- Either service can scale or redeploy without repackaging the entire system.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## The contract
 
-...Image...
+The frontend never accesses the database. Data crosses request/response DTOs and `/api/*`. The backend issues JWTs, while the frontend needs the same signing secret to interpret authentication; both containers therefore receive one runtime secret.
 
-...Link...
+```text
+Browser -> Frontend session -> Authorization: Bearer <JWT> -> Backend API
+```
 
-...Guide...
+## Three representative failures
+
+1. **Hard-coded backend URL:** works locally and fails behind the ALB. Use configurable `BACKEND_URL` plus explicit timeouts.
+2. **Mismatched JWT secrets:** login succeeds, then later requests return 401. Use one Secrets Manager source.
+3. **Backend errors collapse into generic 500 pages:** distinguish timeouts, authentication failures, and business errors at the web boundary.
+
+## Conclusion
+
+Service separation creates value only when API contracts, configuration, and error observability are product features. Otherwise network complexity outweighs deployment flexibility.

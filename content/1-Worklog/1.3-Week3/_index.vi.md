@@ -5,55 +5,37 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tìm hiểu các dịch vụ Compute và Storage trên AWS như Amazon EC2 (VM), Amazon Lightsail, Amazon EFS và Amazon FSx.
+- Khám phá AWS Application Migration Service (MGN).
+- Triển khai AWS Backup và thực hành tạo Backup Plan, cấu hình thông báo, kiểm tra khôi phục dữ liệu.
+- Làm quen với AWS Storage Gateway, thực hành tạo File Share và gắn (mount) lên máy On-premises.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                     |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------- |
+| 2   | - Tìm hiểu về dịch vụ máy ảo (Compute VM) trên AWS <br> - Amazon Lightsail                                                                                                                                        | 04/06/2026   | 04/06/2026      | <https://youtu.be/-t5h4N6vfBs?si=7eGLk3Bf5ol4M96x> |
+| 3   | - Triển khai AWS Backup <br>&emsp; + Tạo Backup Plan <br>&emsp; + Thiết lập thông báo (Notifications) <br>&emsp; + Kiểm tra khôi phục dữ liệu (Restore Test)                                                      | 05/06/2026   | 05/06/2026      | <https://000013.awsstudygroup.com/>                |
+| 4   | - Sử dụng AWS Storage Gateway <br> - **Thực hành:** <br>&emsp; + Tạo Storage Gateway <br>&emsp; + Tạo File Shares <br>&emsp; + Mount File Shares trên máy On-premises                                             | 06/06/2026   | 06/06/2026      | <https://000024.awsstudygroup.com/>                |
+| 5   | - Bắt đầu với Amazon S3 <br>&emsp; + Tạo S3 Bucket <br>&emsp; + Kích hoạt tính năng Static Website Hosting <br>&emsp; + Cấu hình Public Access Block <br>&emsp; + Kiểm tra Website <br> - Cấu hình Public Objects | 07/06/2026   | 07/06/2026      | <https://000057.awsstudygroup.com/vi/>             |
+| 6   | - Nghiên cứu kiến trúc hệ thống cho dự án nhóm AWS                                                                                                                                                                | 08/06/2026   | 08/06/2026      |                                                    |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Tìm hiểu và thực hành các dịch vụ AWS sau:
+  - **Compute:** Amazon EC2 (VM), Amazon Lightsail.
+  - **Storage:** Amazon EFS, Amazon FSx, Amazon S3, AWS Storage Gateway.
+  - **Migration:** AWS Application Migration Service (MGN).
+  - **Backup:** AWS Backup (tạo Backup Plan, cấu hình thông báo và kiểm tra khôi phục dữ liệu).
+  - ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Triển khai thành công AWS Backup, bao gồm tạo Backup Plan, thiết lập thông báo và kiểm tra quá trình khôi phục dữ liệu.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Tạo và mount thành công File Storage Gateway trên máy On-premises.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Cấu hình thành công tính năng Static Website Hosting cho Amazon S3 và tăng tốc truy cập bằng Amazon CloudFront.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành bước nghiên cứu kiến trúc ban đầu cho dự án nhóm AWS.

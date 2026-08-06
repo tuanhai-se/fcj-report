@@ -5,55 +5,33 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Củng cố kiến thức về Amazon API Gateway và các cơ chế tích hợp.
+- Xây dựng và triển khai AWS Lambda để tải dữ liệu từ tệp Excel lên Amazon DynamoDB.
+- Triển khai đầy đủ các thao tác CRUD bằng AWS Lambda và Amazon DynamoDB.
+- Cấu hình Amazon API Gateway để kiểm thử các hàm Lambda bằng Postman.
+- Tìm hiểu và áp dụng tính năng Body Validation bằng API Gateway Models.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                  | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                     |
+| --- | -------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------- |
+| 2   | - Tìm hiểu về Amazon API Gateway                                           | 23/07/2026   | 23/07/2026      | <https://youtu.be/YjOjDtprDSo?si=NYb88SlpO2VMhLYx> |
+| 3   | - Xây dựng hàm AWS Lambda để tải dữ liệu từ tệp Excel lên Amazon DynamoDB  | 24/07/2026   | 24/07/2026      |                                                    |
+| 4   | - Xây dựng hàm AWS Lambda thực hiện các thao tác CRUD trên Amazon DynamoDB | 25/07/2026   | 25/07/2026      |                                                    |
+| 5   | - Cấu hình Amazon API Gateway để kiểm thử hàm Lambda bằng Postman          | 26/07/2026   | 26/07/2026      | <https://000079.awsstudygroup.com/>                |
+| 6   | - Tìm hiểu Body Validation bằng API Gateway Models                         | 27/07/2026   | 27/07/2026      | <https://youtu.be/tmhZbcqlEiQ?si=MBkltclc2rWTlHKr> |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành việc tìm hiểu các khái niệm cơ bản và luồng hoạt động của Amazon API Gateway.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Xây dựng thành công hàm AWS Lambda để đọc dữ liệu từ tệp Excel và lưu vào Amazon DynamoDB.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Phát triển đầy đủ các chức năng CRUD bằng AWS Lambda kết hợp với Amazon DynamoDB.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Cấu hình Amazon API Gateway và kiểm thử thành công các API thông qua Postman.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Triển khai tính năng Body Validation bằng API Gateway Models nhằm đảm bảo các yêu cầu API có cấu trúc và dữ liệu hợp lệ.

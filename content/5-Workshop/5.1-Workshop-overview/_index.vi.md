@@ -1,19 +1,36 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Kiến trúc triển khai"
+date: 2026-08-05
+weight: 1
+chapter: false
+pre: "<b>5.1.</b>"
+description: "Kiến trúc EduFlow trên AWS và kết quả triển khai."
 ---
 
-#### Giới thiệu về VPC Endpoint
+# Kiến trúc triển khai
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+## Kiến trúc hệ thống
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+Hạ tầng EduFlow được định nghĩa bằng Terraform, gồm VPC, public/private data subnet, security group, ALB, ECS Fargate, ECR, RDS MySQL, S3, Secrets Manager và CloudWatch Logs tại `ap-southeast-1`.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+```mermaid
+flowchart TB
+    Internet["Trình duyệt / Internet"] --> ALB["AWS Application Load Balancer\nHTTP"]
+    ALB -->|"default"| FE["Frontend ECS :8080"]
+    ALB -->|"/api/*"| BE["Backend ECS :8888"]
+    FE --> BE
+    BE --> DB[("RDS MySQL")]
+    ECR["ECR images"] --> FE
+    ECR --> BE
+    SM["Secrets Manager"] -.-> FE
+    SM -.-> BE
+```
+
+## Kết quả triển khai
+
+- DNS ALB công khai phản hồi trang chủ và API thống kê bằng HTTP `200`.
+- Workflow trên nhánh `main` hoàn tất backend test, frontend test, Terraform validation, build/push image và ECS deployment.
+- Smoke test trình duyệt xác minh trang công khai, chuyển Việt–Anh và redirect
+  người chưa đăng nhập sang trang đăng nhập khi bắt đầu mua khóa học.
+- K6 hoàn thành 1.758 request với 50 VU, tỷ lệ lỗi 0,00% và p95 1,84 giây.
+- Ứng dụng được cung cấp qua DNS mặc định của AWS Application Load Balancer.

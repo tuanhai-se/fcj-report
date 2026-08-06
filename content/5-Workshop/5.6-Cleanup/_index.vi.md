@@ -1,37 +1,22 @@
 ---
-title : "Dọn dẹp tài nguyên"
-date : 2024-01-01
-weight : 6
-chapter : false
-pre : " <b> 5.6. </b> "
+title: "Vận hành sau triển khai"
+date: 2026-08-05
+weight: 6
+chapter: false
+pre: "<b>5.6.</b>"
+description: "Trạng thái ứng dụng và quy trình tái triển khai EduFlow."
 ---
 
-#### Dọn dẹp tài nguyên
+# Vận hành sau triển khai
 
-Xin chúc mừng bạn đã hoàn thành xong lab này!
-Trong lab này, bạn đã học về các mô hình kiến trúc để truy cập Amazon S3 mà không sử dụng Public Internet.
+## Trạng thái dịch vụ
 
-+ Bằng cách tạo Gateway endpoint, bạn đã cho phép giao tiếp trực tiếp giữa các tài nguyên EC2 và Amazon S3, mà không đi qua Internet Gateway.
-Bằng cách tạo Interface endpoint, bạn đã mở rộng kết nối S3 đến các tài nguyên chạy trên trung tâm dữ liệu trên chỗ của bạn thông qua AWS Site-to-Site VPN hoặc Direct Connect.
+- Website EduFlow tiếp tục hoạt động qua AWS Application Load Balancer sau khi pipeline hoàn thành.
+- Trang chủ và API `/api/public/stats` cùng phản hồi HTTP `200` trong lần kiểm tra ngày 05/08/2026.
+- Quy trình chờ ECS service ổn định được tích hợp trong job triển khai.
 
-#### Dọn dẹp
-1. Điều hướng đến Hosted Zones trên phía trái của bảng điều khiển Route 53. Nhấp vào tên của  s3.us-east-1.amazonaws.com zone. Nhấp vào Delete và xác nhận việc xóa bằng cách nhập từ khóa "delete".
+## Khả năng tái triển khai
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
-
-2. Disassociate Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
-
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
-
-4.Mở console của CloudFormation và xóa hai stack CloudFormation mà bạn đã tạo cho bài thực hành này:
-+ PLOnpremSetup
-+ PLCloudSetup
-
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
-
-5. Xóa các S3 bucket
-
-+ Mở bảng điều khiển S3
-+ Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
-+ 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+- Pipeline #76 hoàn thành kiểm thử, build image và triển khai trong **9 phút 07 giây**.
+- Container image của frontend và backend được build, push lên Amazon ECR và cập nhật cho ECS.
+- Cấu hình Terraform và workflow CI/CD được quản lý cùng mã nguồn, hỗ trợ triển khai nhất quán.

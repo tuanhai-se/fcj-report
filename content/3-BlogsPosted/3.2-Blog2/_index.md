@@ -1,31 +1,36 @@
 ---
-title: "Blog 2"
-date: 2024-01-01
-weight: 1
+title: "From architecture diagram to ECS Fargate with Terraform"
+date: 2026-08-05
+weight: 2
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: "<b>3.2.</b>"
+description: "How EduFlow turns an AWS architecture into reproducible infrastructure modules."
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# From architecture diagram to ECS Fargate with Terraform
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+EduFlow infrastructure does not aim to use the most AWS services. It maps each operational need to one clear component.
 
-Key points to know:
+## Module boundaries
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+| Module            | Role                                                      |
+| ----------------- | --------------------------------------------------------- |
+| `vpc`             | VPC, public subnets, and private data subnets             |
+| `security-groups` | Permit only ALB → apps and backend → RDS                  |
+| `alb`             | TLS/HTTP entry point, health checks, and `/api/*` routing |
+| `ecs`             | Cluster, ECR, task definitions, and Fargate services      |
+| `rds`             | MySQL, subnet group, backups, and monitoring role         |
+| `secrets-manager` | Database, SMTP, JWT, and VNPay runtime values             |
+| `s3`              | Asset/backup bucket with public access blocked            |
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## Delivery flow
 
-...Image...
+GitHub Actions runs tests and `terraform validate`, signs in to ECR, builds both images tagged with the commit SHA, pushes them, and forces new ECS deployments. The SHA provides exact traceability; `latest` supports simple operations.
 
-...Link...
+## Cost decisions
 
-...Guide...
+The dev environment uses low desired counts, Single-AZ RDS, and no modules absent from the architecture. This is intentional: control MVP cost while preserving `multi_az` and desired-count inputs for future availability requirements.
+
+## Conclusion
+
+Good Terraform is executable documentation. Module names, inputs/outputs, and security groups should communicate the architecture without reading every resource.

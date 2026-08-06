@@ -1,31 +1,36 @@
 ---
-title: "Blog 1"
-date: 2024-01-01
+title: "Tách Spring Boot frontend và backend trong EduFlow"
+date: 2026-08-05
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: "<b>3.1.</b>"
+description: "Bài học về hợp đồng API, JWT dùng chung và lỗi giữa hai dịch vụ."
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# Tách Spring Boot frontend và backend trong EduFlow
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+EduFlow dùng hai ứng dụng Java: frontend render Thymeleaf trên cổng 8080 và backend REST API trên cổng 8888. Cách tách này giúp hai lớp có vòng đời độc lập, nhưng cũng tạo thêm ranh giới mạng, xác thực và xử lý lỗi.
 
-Các điểm chính cần nắm:
+## Vì sao tách?
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+- Frontend tập trung vào HTML, form, session, i18n và trải nghiệm theo vai trò.
+- Backend sở hữu quy tắc nghiệp vụ, dữ liệu JPA, phân quyền và tích hợp thanh toán/email.
+- Có thể scale hoặc triển khai lại từng dịch vụ mà không đóng gói lại toàn hệ thống.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+## Hợp đồng giữa hai bên
 
-...Hình ảnh...
+Frontend không truy cập database. Mọi dữ liệu đi qua request/response DTO và API `/api/*`. JWT được phát hành bởi backend nhưng frontend cần cùng signing secret để đọc thông tin xác thực; secret vì vậy phải được cấp ở runtime cho cả hai container.
 
-...Link...
+```text
+Browser -> Frontend session -> Authorization: Bearer <JWT> -> Backend API
+```
 
-...Hướng dẫn...
+## Ba lỗi điển hình
+
+1. **Backend URL hard-code:** hoạt động local nhưng thất bại sau ALB. Giải pháp là `BACKEND_URL` và timeout cấu hình được.
+2. **JWT secret lệch nhau:** đăng nhập thành công nhưng request sau bị 401. Giải pháp là một nguồn secret trong Secrets Manager.
+3. **Lỗi backend biến thành 500 chung:** frontend cần phân biệt timeout, lỗi xác thực và lỗi nghiệp vụ để hiển thị thông báo phù hợp.
+
+## Kết luận
+
+Tách dịch vụ chỉ tạo giá trị khi hợp đồng API, cấu hình và quan sát lỗi được thiết kế như một phần của sản phẩm. Nếu không, độ phức tạp mạng sẽ lớn hơn lợi ích triển khai.

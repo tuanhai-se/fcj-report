@@ -5,55 +5,36 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Củng cố kiến thức về DevOps trên AWS:
+  - Infrastructure as Code (IaC).
+  - Các dịch vụ Container và điều phối Container.
+  - Các công cụ Giám sát và Quan sát hệ thống (Monitoring & Observability).
+- Tìm hiểu cách triển khai API trên nhiều môi trường bằng Stage Variables.
+- Hiểu và triển khai Canary Deployment trên Amazon API Gateway.
+- Sử dụng phương thức ANY trên Amazon API Gateway để xử lý endpoint linh hoạt.
+- Tìm hiểu Amazon Route 53 và cơ chế định tuyến DNS trên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                     |
+| --- | ----------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------- |
+| 2   | - Tìm hiểu về DevOps trên các dịch vụ AWS                         | 29/07/2026   | 29/07/2026      |                                                    |
+| 3   | - Sử dụng Stage Variables để triển khai API trên nhiều môi trường | 30/07/2026   | 30/07/2026      | <https://youtu.be/nubjfS50wFg?si=XQsWE01pyAtyrJh8> |
+| 4   | - Triển khai Canary Deployment trên Amazon API Gateway            | 31/07/2026   | 31/07/2026      | <https://youtu.be/BAjj_XUXnVA?si=21aaQMnOoLTGAeGk> |
+| 5   | - Sử dụng phương thức ANY trên Amazon API Gateway                 | 01/08/2026   | 01/08/2026      | <https://youtu.be/nXqXJPepMJU?si=mwUbp48qdAHSHaT7> |
+| 6   | - Tìm hiểu về Amazon Route 53                                     | 02/08/2026   | 02/08/2026      | <https://youtu.be/JRZiQFVWpi8?si=hIE5i0OnqhTw-5nI> |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Nắm vững các khái niệm DevOps trên AWS, bao gồm Infrastructure as Code (IaC), các dịch vụ Container và các công cụ Monitoring & Observability.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Triển khai thành công API trên nhiều môi trường bằng Stage Variables.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Thực hiện Canary Deployment trên Amazon API Gateway để kiểm thử và triển khai thay đổi một cách an toàn.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Áp dụng phương thức ANY trên Amazon API Gateway để xây dựng các endpoint linh hoạt.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Tìm hiểu và nắm được các khái niệm định tuyến DNS cơ bản với Amazon Route 53.

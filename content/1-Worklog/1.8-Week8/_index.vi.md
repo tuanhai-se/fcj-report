@@ -5,55 +5,34 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tìm hiểu và nắm vững các trụ cột cốt lõi trong Kiến trúc AWS (AWS Well-Architected Framework):
+  - Kiến trúc bảo mật (Secure Architectures): IAM, MFA, SCP, KMS, Security Groups, Network ACLs (NACLs), GuardDuty, Shield, WAF, Secrets Manager.
+  - Kiến trúc có khả năng phục hồi (Resilient Architectures): Multi-AZ/Region, Auto Scaling, Route 53, Load Balancing, Backup & Restore.
+  - Kiến trúc hiệu năng cao (High-Performing Architectures): Compute Scaling, các dịch vụ Storage, Caching và CloudFront.
+  - Kiến trúc tối ưu chi phí (Cost-Optimized Architectures): Cost Explorer, AWS Budgets, Savings Plans, tối ưu NAT Gateway và Storage Tiering.
+- Triển khai và cấu hình API Gateway Proxy Resource.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                             | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                     |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------- |
+| 2   | - Tìm hiểu về Secure Architectures <br>&emsp; + IAM, MFA, SCP, AWS KMS <br>&emsp; + Security Groups, NACLs, Amazon GuardDuty, AWS Shield, AWS WAF, AWS Secrets Manager                                | 09/07/2026   | 09/07/2026      |                                                    |
+| 3   | - Tìm hiểu về Resilient Architectures <br>&emsp; + Multi-AZ/Region, Auto Scaling <br>&emsp; + Amazon Route 53, Load Balancing, Backup & Restore                                                       | 10/07/2026   | 10/07/2026      |                                                    |
+| 4   | - Tìm hiểu về High-Performing Architectures <br>&emsp; + Compute Scaling (Amazon EC2, AWS Lambda, AWS Fargate) <br>&emsp; + Storage (Amazon S3, Amazon EFS, Amazon EBS), Caching và Amazon CloudFront | 11/07/2026   | 11/07/2026      |                                                    |
+| 5   | - Tìm hiểu Cost-Optimized Architectures <br>&emsp; + AWS Cost Explorer <br>&emsp; + AWS Budgets <br>&emsp; + Savings Plans                                                                            | 12/07/2026   | 12/07/2026      |                                                    |
+| 6   | - Tìm hiểu Proxy Resource và triển khai Proxy Resource trên Amazon API Gateway                                                                                                                        | 13/07/2026   | 13/07/2026      | <https://youtu.be/zZzHTHs72Sk?si=qhdd4v0mADIh3MJ0> |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành các nội dung học tập về:
+  - Secure Architectures và các dịch vụ bảo mật cốt lõi trên AWS.
+  - Resilient Architectures với các chiến lược triển khai Multi-AZ và Multi-Region.
+  - High-Performing Architectures thông qua các giải pháp Compute, Storage và Caching.
+  - Các kỹ thuật tối ưu chi phí trên nhiều dịch vụ AWS.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Triển khai thành công API Gateway Proxy Resource theo tài liệu hướng dẫn.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành đầy đủ các nhiệm vụ từ Thứ 2 đến Thứ 6 đúng theo kế hoạch.
