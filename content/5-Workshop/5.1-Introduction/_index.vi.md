@@ -1,5 +1,5 @@
 ---
-title: "Kiến trúc triển khai"
+title: "Giới thiệu"
 date: 2026-08-05
 weight: 1
 chapter: false

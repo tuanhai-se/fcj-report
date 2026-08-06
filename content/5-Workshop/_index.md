@@ -1,5 +1,5 @@
 ---
-title: "EduFlow Deployment Workshop"
+title: "Workshop"
 date: 2026-08-05
 weight: 5
 chapter: false

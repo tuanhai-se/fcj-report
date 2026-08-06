@@ -1,5 +1,5 @@
 ---
-title: "Deployment resources"
+title: "Prerequiste"
 date: 2026-08-05
 weight: 2
 chapter: false

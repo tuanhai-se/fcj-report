@@ -1,5 +1,5 @@
 ---
-title: "Nguồn tài liệu triển khai"
+title: "Điều kiện tiên quyết"
 date: 2026-08-05
 weight: 2
 chapter: false

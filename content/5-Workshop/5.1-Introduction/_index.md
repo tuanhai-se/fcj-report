@@ -1,5 +1,5 @@
 ---
-title: "Deployment architecture"
+title: "Introduction"
 date: 2026-08-05
 weight: 1
 chapter: false
