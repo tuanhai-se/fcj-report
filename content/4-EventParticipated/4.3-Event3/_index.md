@@ -6,28 +6,50 @@ chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-# Summary Report: FCAJ - Agentic AI Build Week
+# Summary Report: Seminar “AI From Scratch”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Learn the fundamentals of Artificial Intelligence.
+- Explore AI concepts and real-world applications.
+- Build a strong foundation in AI.
+
+### Speakers
+
+- **Nguyen Tuan Thinh** – DevOps/Cloud Engineer - AWS
+- **Nguyen Cong Minh** – DevOps/Cloud Engineer - AWS
+- **Teacher Mai Hoang Dinh** – Lecturer IA - FPTU HCMC
 
 ### Key Highlights
 
-- Introduced the concept of Agentic AI and AI agents.
-- Demonstrated modern AI agent frameworks and tools
-- Explored multi-agent collaboration and automation.
+- Introduced fundamental AI concepts and terminology.
+- Explored machine learning and deep learning basics.
+- Shared AI development workflows and best practices.
 
 ### Key Takeaways
 
-- Understood the fundamentals of Agentic AI.
-- Learned how AI agents make autonomous decisions.
-- Gained hands-on experience in building AI agents.
+- Understood AI fundamentals and core concepts.
+- Learned the AI development workflow.
+- Explored real-world AI applications.
+
+### Applying to Work
+
+- Apply AI concepts to future software projects.
+- Utilize AI tools to improve productivity.
+- Enhance problem-solving with AI techniques.
+
+### Event Experience
+
+- Engaged in interactive discussions with speakers.
+- Participated in an informative learning session.
+- Explored practical AI use cases.
+
+#### Learning from highly skilled speakers
+
+- Learned from experienced AI professionals.
+- Gained valuable industry insights and best practices.
+- Understood current AI trends and innovations.
 
 #### Some event photos
 
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-1.jpg">
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-2.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event2/event2-1.jpg">

@@ -1,5 +1,5 @@
 ---
-title: "Đề xuất giải pháp"
+title: "Đề xuất"
 date: 2026-08-05
 weight: 2
 chapter: false

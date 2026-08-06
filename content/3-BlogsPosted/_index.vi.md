@@ -1,5 +1,5 @@
 ---
-title: "Bài viết kỹ thuật"
+title: "Bài đăng Blogs"
 date: 2026-08-05
 weight: 3
 chapter: false
