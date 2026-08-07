@@ -52,4 +52,4 @@ pre: " <b> 4.3. </b> "
 
 #### Some event photos
 
-<img src="/fcj-report/images/4-EventParticipated/Event3/event2-1.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event3/abcxyz.jpg">
