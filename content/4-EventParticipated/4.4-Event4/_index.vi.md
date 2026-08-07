@@ -8,9 +8,9 @@ pre: " <b> 4.4. </b> "
 
 # Sự kiện 4 – FCAJ: Agentic AI Build Week
 
-**Thời gian:** (Bổ sung nếu có)
+**Thời gian:** 09:00, 25/07/2026
 
-**Địa điểm:** (Bổ sung nếu có)
+**Địa điểm:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
 
 **Vai trò:** Người tham dự
 
