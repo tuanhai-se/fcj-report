@@ -1,7 +1,7 @@
 ---
 title: "Event 3"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
@@ -52,4 +52,4 @@ pre: " <b> 4.3. </b> "
 
 #### Some event photos
 
-<img src="/fcj-report/images/4-EventParticipated/Event2/event2-1.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event3/event2-1.jpg">

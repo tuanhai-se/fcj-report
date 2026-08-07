@@ -6,43 +6,24 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch: “Level up AWS Skills with Cloud Quest and Floci”
+# Sự kiện 1 – FCAJ Community Day
 
-### Mục tiêu của sự kiện
+**Thời gian:** 09:00, ngày 30/05/2026
 
-- Nâng cao kỹ năng AWS Cloud thông qua các thử thách thực hành, hình thức học tập tương tác và trải nghiệm thực tế trên nền tảng Cloud Quest và Floci.
+**Địa điểm:** Tầng 26, Bitexco Financial Tower, số 02 Hải Triều, Phường Sài Gòn, Thành phố Hồ Chí Minh
 
-### Diễn giả
+**Vai trò:** Người tham dự
 
-- **Huỳnh Thái Linh** – Diễn giả
+### Nội dung chính
 
-### Nội dung nổi bật
+Sự kiện quy tụ các thành viên trong cộng đồng FCAJ với nhiều chủ đề xoay quanh AWS, Cloud Computing và AI. Các nội dung được chia sẻ bao gồm:
 
-#### Tổng quan về Cloud Quest và Floci
+- AWS CloudQuest và phương pháp học AWS thông qua các thử thách thực hành.
+- Fly.io và kinh nghiệm triển khai ứng dụng trên nền tảng Cloud.
+- Chia sẻ kinh nghiệm tham gia Hackathon và phát triển sản phẩm thực tế.
+- Giới thiệu ứng dụng AI **"Tử vi Đại Việt"** cùng quy trình xây dựng và triển khai.
 
-- Tìm hiểu các khái niệm AWS thông qua các thử thách mang tính tương tác trên Cloud Quest.
-- Thực hành các bài lab trên nền tảng Floci để nâng cao kỹ năng sử dụng AWS.
-- Triển khai và quản lý các dịch vụ AWS trong các tình huống thực tế.
-
-#### Lợi ích của Cloud Quest và Floci
-
-- Học tập theo hình thức tương tác và trực quan.
-- Tăng cường kỹ năng thực hành trên môi trường Cloud.
-- Ghi nhớ kiến thức hiệu quả thông qua trải nghiệm thực tế.
-
-#### Trải nghiệm học tập
-
-- Hoàn thành các nhiệm vụ trong Cloud Quest.
-- Thực hiện các bài thực hành trên Floci.
-- Áp dụng các kiến thức AWS vào những tình huống thực tế.
-
-### Những điều học được
-
-- Hiểu rõ hơn về các dịch vụ cốt lõi của AWS.
-- Nâng cao khả năng giải quyết vấn đề trong môi trường Cloud.
-- Tiếp cận và áp dụng các best practices của AWS.
-
-#### Một số hình ảnh khi tham gia sự kiện
+### Minh chứng tham gia
 
 <img src="/fcj-report/images/4-EventParticipated/Event1/event1-1.jpg">
 
@@ -51,3 +32,10 @@ pre: " <b> 4.1. </b> "
 <img src="/fcj-report/images/4-EventParticipated/Event1/event1-3.jpg">
 
 <img src="/fcj-report/images/4-EventParticipated/Event1/event1-4.jpg">
+
+### Những điều học được
+
+- Hiểu rõ hơn về các xu hướng ứng dụng AWS trong những dự án thực tế.
+- Biết thêm các công cụ và nền tảng hỗ trợ triển khai ứng dụng Cloud như Fly.io.
+- Học hỏi kinh nghiệm phát triển sản phẩm từ Hackathon và các dự án AI.
+- Có thêm góc nhìn về cách kết hợp AI với hạ tầng Cloud để xây dựng các ứng dụng phục vụ người dùng.

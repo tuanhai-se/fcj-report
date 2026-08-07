@@ -1,53 +1,39 @@
 ---
 title: "Sự kiện 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch: “Level up AWS Skills with Cloud Quest and Floci”
+# Sự kiện 2 – FCAJ Community Day
 
-### Mục tiêu của sự kiện
+**Thời gian:** 09:00, ngày 27/06/2026
 
-- Nâng cao kỹ năng AWS Cloud thông qua các thử thách thực hành, hình thức học tập tương tác và trải nghiệm thực tế trên nền tảng Cloud Quest và Floci.
+**Địa điểm:** Tầng 26, Bitexco Financial Tower, số 02 Hải Triều, Phường Sài Gòn, Thành phố Hồ Chí Minh
 
-### Diễn giả
+**Vai trò:** Người tham dự
 
-- **Huỳnh Thái Linh** – Diễn giả
+### Nội dung chính
 
-### Nội dung nổi bật
+Sự kiện tập trung vào các ứng dụng thực tiễn của **Trí tuệ nhân tạo (AI)** trong lĩnh vực điện toán đám mây. Các diễn giả đến từ nhiều doanh nghiệp đã chia sẻ kinh nghiệm triển khai AI kết hợp với hạ tầng Cloud để giải quyết các bài toán thực tế.
 
-#### Tổng quan về Cloud Quest và Floci
+Một số nội dung nổi bật gồm:
 
-- Tìm hiểu các khái niệm AWS thông qua các thử thách mang tính tương tác trên Cloud Quest.
-- Thực hành các bài lab trên nền tảng Floci để nâng cao kỹ năng sử dụng AWS.
-- Triển khai và quản lý các dịch vụ AWS trong các tình huống thực tế.
+- Xu hướng ứng dụng AI trong phát triển và vận hành hệ thống Cloud.
+- Kinh nghiệm triển khai các giải pháp AI trong môi trường doanh nghiệp.
+- Vai trò của AI trong tự động hóa, tối ưu tài nguyên và nâng cao hiệu quả vận hành.
+- Những kinh nghiệm thực tế khi xây dựng và triển khai các sản phẩm sử dụng AI trên nền tảng AWS.
 
-#### Lợi ích của Cloud Quest và Floci
+### Minh chứng tham gia
 
-- Học tập theo hình thức tương tác và trực quan.
-- Tăng cường kỹ năng thực hành trên môi trường Cloud.
-- Ghi nhớ kiến thức hiệu quả thông qua trải nghiệm thực tế.
+<img src="/fcj-report/images/4-EventParticipated/Event2/event2-2.jpg">
 
-#### Trải nghiệm học tập
-
-- Hoàn thành các nhiệm vụ trong Cloud Quest.
-- Thực hiện các bài thực hành trên Floci.
-- Áp dụng các kiến thức AWS vào những tình huống thực tế.
+<img src="/fcj-report/images/4-EventParticipated/Event2/event2-3.jpg">
 
 ### Những điều học được
 
-- Hiểu rõ hơn về các dịch vụ cốt lõi của AWS.
-- Nâng cao khả năng giải quyết vấn đề trong môi trường Cloud.
-- Tiếp cận và áp dụng các best practices của AWS.
-
-#### Một số hình ảnh khi tham gia sự kiện
-
-<img src="/fcj-report/images/4-EventParticipated/Event1/event1-1.jpg">
-
-<img src="/fcj-report/images/4-EventParticipated/Event1/event1-2.jpg">
-
-<img src="/fcj-report/images/4-EventParticipated/Event1/event1-3.jpg">
-
-<img src="/fcj-report/images/4-EventParticipated/Event1/event1-4.jpg">
+- Hiểu rõ hơn về cách AI được ứng dụng trong hạ tầng Cloud và các hệ thống thực tế.
+- Có thêm góc nhìn về việc kết hợp AI với các dịch vụ AWS để xây dựng giải pháp thông minh.
+- Học hỏi kinh nghiệm triển khai và vận hành hệ thống từ các diễn giả trong ngành.
+- Nhận thấy tầm quan trọng của AI trong việc hỗ trợ tự động hóa và tối ưu hạ tầng điện toán đám mây.

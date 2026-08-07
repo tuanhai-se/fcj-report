@@ -1,33 +1,24 @@
 ---
 title: "Event 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 4.4. </b> "
 ---
 
-# Summary Report: FCAJ - Agentic AI Build Week
+### Event Name: AI Agentic Build Week
 
-### Event Objectives
+**Time:** 09:00, 25/07/2026
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+**Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
 
-### Key Highlights
+**Role:** Attendee
 
-- Introduced the concept of Agentic AI and AI agents.
-- Demonstrated modern AI agent frameworks and tools
-- Explored multi-agent collaboration and automation.
+**Main Content:** Sharing sessions from the Agentic AI Hackathon (AI Agentic Build Week) — teams that participated in the Hackathon shared their experience, approach, and lessons learned during the competition.
 
-### Key Takeaways
+**Proof of participation:**
 
-- Understood the fundamentals of Agentic AI.
-- Learned how AI agents make autonomous decisions.
-- Gained hands-on experience in building AI agents.
-
-#### Some event photos
-
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-1.jpg">
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-2.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event4/event4-1.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event4/event4-2.jpg">
+**Lessons learned / personal contribution:**
+Gained a better understanding of how a team operates during a Hackathon, and the common difficulties teams face when participating (time pressure, technical challenges, teamwork under deadline).
