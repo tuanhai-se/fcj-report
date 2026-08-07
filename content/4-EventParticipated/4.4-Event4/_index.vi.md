@@ -28,9 +28,8 @@ Các nội dung nổi bật gồm:
 
 ### Minh chứng tham gia
 
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-1.jpg">
-
-<img src="/fcj-report/images/4-EventParticipated/Event3/event3-2.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event4/event4-1.jpg">
+<img src="/fcj-report/images/4-EventParticipated/Event4/event4-2.jpg">
 
 ### Những điều học được
 
